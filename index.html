@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shara_modal</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <!-- card -->
+        <div class="card"> 
+            <!-- img -->
+            <div class="image">
+                <img src="./assets/PicsArt_06-04-11.56.44.jpg" alt="User">
+            </div>
+            <!-- heading -->
+            <h1 class="username">Abhishek Kushwaha</h1>
+            <h3 class="designation">Full-stack Developer</h3>
+            <div class="button-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <p>share my profile</p>
+                </button>
+                <button class="btn-follow btn-card">
+                    Follow me
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1> Share My Profile</h1>
+            <button >
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </button>
+        </div>
+
+        <div>
+            <h3>Share this via</h3>
+
+            <!-- icon container -->
+            <div class="icon-container">
+                <a href="https://www.facebook.com/profile.php?id=100038020128226&mibextid=ZbWKwL"  target="_blank" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/Abhii-03" target="_blank" class="icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/abhishek__kushwaha00?igshid=ZDdkNTZiNTM="  target="_blank" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-kushwaha-27a055222/"  target="_blank" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href=""  target="_blank" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
